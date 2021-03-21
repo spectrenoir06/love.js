@@ -138,6 +138,7 @@ getAdditionalInfo(commander).then((args) => {
     fs.copySync(`${srcDir}/${fldr_name}/love.js`, `${outputDir}/love.js`);
     fs.copySync(`${srcDir}/${fldr_name}/love.wasm`, `${outputDir}/love.wasm`);
     fs.copySync(`${srcDir}/${fldr_name}/theme`, `${outputDir}/theme`);
+    fs.copySync(`${srcDir}/${fldr_name}/consolewrapper.js`, `${outputDir}/consolewrapper.js`);
 
     if (fldr_name === "release") {
       fs.copySync(`${srcDir}/${fldr_name}/love.worker.js`, `${outputDir}/love.worker.js`);
